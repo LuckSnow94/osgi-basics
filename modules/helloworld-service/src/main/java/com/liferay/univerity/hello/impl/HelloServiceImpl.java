@@ -8,14 +8,12 @@ import org.osgi.service.component.annotations.Component;
  */
 @Component(
 	immediate = true,
-	property = {
-	},
 	service = HelloService.class
 )
 public class HelloServiceImpl implements HelloService {
 	@Override
 	public String hello(String parameter) {
-		return "changed "+parameter+" changed";
+		return "*"+parameter+"*";
 	}
 
 }
